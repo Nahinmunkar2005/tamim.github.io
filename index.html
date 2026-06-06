@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nahin Munkar | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#081b29;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#051129;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:600;
+color:#00eeff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+flex-wrap:wrap;
+}
+
+nav ul li{
+margin-left:15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+section{
+padding:90px 10%;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.hero-text h3{
+font-size:20px;
+color:#00eeff;
+margin-bottom:15px;
+}
+
+.hero-text p{
+line-height:1.8;
+color:#ddd;
+}
+
+.hero-img{
+flex:1;
+text-align:center;
+}
+
+.hero-img img{
+width:280px;
+height:280px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #00eeff;
+box-shadow:0 0 25px #00eeff;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00eeff;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+}
+
+.title{
+text-align:center;
+font-size:28px;
+margin-bottom:35px;
+color:#00eeff;
+}
+
+.card{
+background:#112e42;
+padding:25px;
+border-radius:15px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.box{
+background:#112e42;
+padding:20px;
+border-radius:15px;
+transition:.3s;
+}
+
+.box:hover{
+transform:translateY(-8px);
+}
+
+.box h3{
+color:#00eeff;
+margin-bottom:10px;
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.skill span{
+display:block;
+margin-bottom:8px;
+}
+
+.bar{
+height:8px;
+background:#222;
+border-radius:20px;
+}
+
+.fill{
+height:100%;
+background:#00eeff;
+border-radius:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact-icons{
+margin-top:20px;
+}
+
+.contact-icons a{
+font-size:32px;
+margin:0 10px;
+color:#00eeff;
+transition:.3s;
+}
+
+.contact-icons a:hover{
+color:white;
+}
+
+footer{
+background:#051129;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:30px;
+}
+
+.hero-img img{
+width:220px;
+height:220px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<div class="logo">nahin.</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#hobbies">Hobbies</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Nahin Munkar</h1>
+
+<h3>Computer Science & Engineering Student</h3>
+
+<p>
+Passionate about Digital Signal Processing (DSP),
+Artificial Intelligence, MATLAB, Python and
+Modern Web Development.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+<div class="hero-img">
+<img src="profile.png" alt="Nahin Munkar">
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+<p>
+I am a Computer Science and Engineering student at
+Varendra University. I enjoy working with DSP,
+MATLAB, Simulink, Python and Web Technologies.
+I am always interested in learning new technologies
+and building practical projects.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Technical Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+<span>Python</span>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<span>MATLAB</span>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<span>HTML & CSS</span>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<span>GitHub</span>
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="grid">
+
+<div class="box">
+<h3>EMG Signal Processing</h3>
+<p>Analysis and filtering of EMG signals using MATLAB.</p>
+</div>
+
+<div class="box">
+<h3>PPG Signal Analysis</h3>
+<p>Heart rate monitoring and signal processing project.</p>
+</div>
+
+<div class="box">
+<h3>AI Attendance System</h3>
+<p>Face recognition based attendance monitoring system.</p>
+</div>
+
+<div class="box">
+<h3>8086 Addressing Modes</h3>
+<p>Academic presentation on microprocessor architecture.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+
+<h3>B.Sc. in Computer Science & Engineering</h3>
+
+<p>Varendra University</p>
+
+<p>Current Student</p>
+
+</div>
+
+</section>
+
+<section id="certificates">
+
+<h2 class="title">Certificates</h2>
+
+<div class="grid">
+
+<div class="box">
+<h3>Python Programming</h3>
+<p>Programming and Problem Solving.</p>
+</div>
+
+<div class="box">
+<h3>Web Development</h3>
+<p>HTML and CSS Fundamentals.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="hobbies">
+
+<h2 class="title">Hobbies</h2>
+
+<div class="grid">
+
+<div class="box">
+<h3>Photography</h3>
+</div>
+
+<div class="box">
+<h3>Technology Research</h3>
+</div>
+
+<div class="box">
+<h3>Learning New Skills</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="card contact">
+
+<p>Email: nahinmunkar2005@gmail.com</p>
+
+<div class="contact-icons">
+
+<a href="mailto:nahinmunkar2005@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+<a href="https://instagram.com/YOUR_INSTAGRAM_USERNAME" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://tiktok.com/@YOUR_TIKTOK_USERNAME" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Nahin Munkar | All Rights Reserved
+</footer>
+
+</body>
+</html>
